@@ -13,7 +13,8 @@ const productSchema = new mongoose.Schema(
     },
     brand: {
       type: String,
-      required: true
+      required: true,
+      trim: true
     }
   },
   { timestamps: true }
