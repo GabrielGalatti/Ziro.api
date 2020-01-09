@@ -4,7 +4,7 @@ const env = process.env.NODE_ENV || "dev";
 const baseConfig = {
   env,
   isDev: env === "dev",
-  port: 4500
+  port: process.env.port || 3000
 };
 
 let envConfig = {};
