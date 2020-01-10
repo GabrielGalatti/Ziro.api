@@ -3,10 +3,7 @@ import controller, { searchByBrand } from "./product.controller";
 
 const router = Router();
 
-router
-  .route("/")
-  .get(controller.getAll)
-  .post(controller.createOne);
+router.route("/").post(controller.createOne);
 
 router.route("/marca").get(searchByBrand);
 
