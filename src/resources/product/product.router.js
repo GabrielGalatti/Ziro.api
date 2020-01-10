@@ -5,7 +5,7 @@ const router = Router();
 
 router.route("/").post(controller.createOne);
 
-router.route("/marca").get(searchByBrand);
+router.route("/marca").post(searchByBrand);
 
 router.route("/:id").get(controller.findById);
 
