@@ -7,6 +7,6 @@ router.route("/").post(controller.createOne);
 
 router.route("/marca").post(searchByBrand);
 
-router.route("/:id").get(controller.findById);
+router.route("/:id").post(controller.findById);
 
 export default router;
